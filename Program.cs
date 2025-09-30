@@ -9,9 +9,12 @@ namespace CalculatorApp
             Console.WriteLine("--------------------------------");
             Console.WriteLine("Welcome to Simple Calculator!");
             Console.WriteLine("--------------------------------");
+
+            // prompt user to choose operation - identify operation
             Console.WriteLine("Choose an operation: add, subtract, multiply, divide");
             string operation = Console.ReadLine()?.ToLower();
 
+            //entering arguments
             Console.Write("Enter first number: ");
             int num1 = int.Parse(Console.ReadLine());
 
@@ -42,6 +45,7 @@ namespace CalculatorApp
             Console.WriteLine($"Result: {result}");
         }
 
+        // functions
         static int Add(int a, int b) => a + b;
         static int Subtract(int a, int b) => a - b;
         static int Multiply(int a, int b) => a * b;
